@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="DinoPenSprites.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DinoPenSprites.resx</DependentUpon>
+    </Compile>
+    <Compile Update="DinosaurSprites.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DinosaurSprites.resx</DependentUpon>
+    </Compile>
+    <Compile Update="PlacementConditionSprites.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PlacementConditionSprites.resx</DependentUpon>
+    </Compile>
+    <Compile Update="GameScreenSprites.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GameScreenSprites.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="DinoPenSprites.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DinoPenSprites.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DinosaurSprites.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DinosaurSprites.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PlacementConditionSprites.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PlacementConditionSprites.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="GameScreenSprites.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GameScreenSprites.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
